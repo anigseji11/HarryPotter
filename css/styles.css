@@ -246,7 +246,7 @@ footer img {
 
 /* ############################### PERSONAJES ######################################*/
 
-.personajes{
+.personajes {
     display: flex;
     flex-direction: row;
     overflow: scroll;
@@ -254,7 +254,7 @@ footer img {
 
     justify-content: space-between;
 
-   
+
 }
 
 .personaje {
@@ -262,29 +262,29 @@ footer img {
     min-width: 90vw;
     margin-right: 20px;
     justify-content: center;
-    overflow:hidden;
-        
+    overflow: hidden;
+
 }
 
 
 .casas {
-       display: flex;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
 
-.personaje .casas img{
+.personaje .casas img {
     width: 50%;
     height: 50%;
 
-    padding:30px;
+    padding: 30px;
 
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
-.personaje .casas .color{
+.personaje .casas .color {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
@@ -292,18 +292,18 @@ footer img {
 
 
 .personaje img {
-   width: 100%;
+    width: 100%;
 
 
 }
 
-.personaje h2{
+.personaje h2 {
     color: white;
     text-align: center;
     margin: 10px;
 }
 
-.personaje p{
+.personaje p {
     color: white;
     width: 100%;
     margin: 20px;
@@ -539,63 +539,63 @@ footer img {
     /* ############################### PERSONAJES ######################################*/
 
 
-.personaje {
-    display: grid;
-    grid-template-columns: repeat(2, fr) ;
-    grid-template-rows: repeat(3, fr) ;
+    .personaje {
+        display: grid;
+        grid-template-columns: repeat(2, fr);
+        grid-template-rows: repeat(3, fr);
 
-   grid-template-areas: 
-   "titulo texto"
-   "foto texto"
-   "foto casas";
-    
-    margin: 20px;
-            
-}
+        grid-template-areas:
+            "titulo texto"
+            "foto texto"
+            "foto casas";
 
-.casas {
-    grid-area: casas;
+        margin: 20px;
 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    }
 
-}
+    .casas {
+        grid-area: casas;
 
-.personaje .casas img{
-    width: 50%;
-    height: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
-    padding:30px;
+    }
 
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
+    .personaje .casas img {
+        width: 50%;
+        height: 50%;
 
-.personaje .casas .color{
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
+        padding: 30px;
 
-.personaje img {
-    grid-area: foto;
-   width: 40vw;
-}
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
 
-.personaje h2{
-    grid-area: titulo;
-    color: white;
-    text-align: center;
-    margin: 10px;
-}
+    .personaje .casas .color {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
 
-.personaje p{
-    grid-area: texto;
-    color: white;
-    width: 100%;
-    margin: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    .personaje img {
+        grid-area: foto;
+        width: 40vw;
+    }
+
+    .personaje h2 {
+        grid-area: titulo;
+        color: white;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .personaje p {
+        grid-area: texto;
+        color: white;
+        width: 100%;
+        margin: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
 
 
@@ -604,7 +604,7 @@ footer img {
 
     .contenedor {
         display: grid;
-        grid-template-columns:10vw repeat(3, 1fr) 10vw;
+        grid-template-columns: 10vw repeat(3, 1fr) 10vw;
         grid-template-rows: 1fr;
 
         grid-template-areas:
@@ -704,6 +704,14 @@ footer img {
         grid-area: foto;
     }
 
+    .carta-personaje img:hover {
+        position: relative;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+    }
+
     .carta-personaje .imagen-complementaria {
         grid-area: foto2;
         background-image: url(../img/d6acf211be0514a3d96d74a89666189f.jpg);
@@ -729,6 +737,21 @@ footer img {
     .carta-personaje a {
         grid-area: boton;
         width: 90%;
+
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+    .carta-personaje a:hover {
+
+        opacity: 1
     }
 
 
@@ -774,10 +797,21 @@ footer img {
 
 
     .detalle-noticia img {
-
         width: 100%;
-
     }
+
+    .detalle-noticia img:hover {
+        animation: slide 3s infinite linear;
+    }
+
+    @keyframes slide {
+        from {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translate(100%, 0);
+        }
+      }
 
     .intro-noticia {
         font-size: 1rem;
@@ -846,7 +880,7 @@ footer img {
         background-color: black;
     }
 
-    .redes img {}
+    
 
     .final h2 {
         text-decoration: none;
@@ -865,95 +899,95 @@ footer img {
         padding-top: 5px;
     }
 
-        /* ################################ CONTACTO ######################################*/
+    /* ################################ CONTACTO ######################################*/
 
-        .contenedor {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: 1fr;
-    
-            grid-template-areas:
-                ". imagen form form .";
-    
-        }
-    
-        .contenedor .imagen-contenedor {
-            grid-area: imagen;
-    
-            transform: rotate(-90deg);
-            width: 100%;
-            height: 100%;
-    
-            box-shadow: none;
-    
-    
-        }
-    
-        .contenedor .formulario {
-            grid-area: form;
-        }
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+
+        grid-template-areas:
+            ". imagen form form .";
+
+    }
+
+    .contenedor .imagen-contenedor {
+        grid-area: imagen;
+
+        transform: rotate(-90deg);
+        width: 100%;
+        height: 100%;
+
+        box-shadow: none;
 
 
-         /* ############################### PERSONAJES ######################################*/
+    }
+
+    .contenedor .formulario {
+        grid-area: form;
+    }
 
 
-.personaje {
-    display: grid;
-    grid-template-columns: repeat(2, fr) ;
-    grid-template-rows: repeat(3, fr) ;
+    /* ############################### PERSONAJES ######################################*/
 
-   grid-template-areas: 
-   "titulo texto"
-   "foto texto"
-   "foto casas";
-    
-    margin: 20px;
-            
-}
 
-.casas {
-    grid-area: casas;
+    .personaje {
+        display: grid;
+        grid-template-columns: repeat(2, fr);
+        grid-template-rows: repeat(3, fr);
 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+        grid-template-areas:
+            "titulo texto"
+            "foto texto"
+            "foto casas";
 
-}
+        margin: 20px;
 
-.personaje .casas img{
-    width: 40%;
-    height: 40%;
+    }
 
-    padding:10px;
+    .casas {
+        grid-area: casas;
 
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
-.personaje .casas .color{
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
+    }
 
-.personaje img {
-    grid-area: foto;
-   width: 30vw;
-}
+    .personaje .casas img {
+        width: 40%;
+        height: 40%;
 
-.personaje h2{
-    grid-area: titulo;
-    color: white;
-    text-align: center;
-    margin: 10px;
-}
+        padding: 10px;
 
-.personaje p{
-    grid-area: texto;
-    color: white;
-    width: 100%;
-    margin: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    .personaje .casas .color {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    .personaje img {
+        grid-area: foto;
+        width: 30vw;
+    }
+
+    .personaje h2 {
+        grid-area: titulo;
+        color: white;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .personaje p {
+        grid-area: texto;
+        color: white;
+        width: 100%;
+        margin: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
 
 
