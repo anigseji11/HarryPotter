@@ -241,3 +241,16 @@ padding: 5px;
     text-align: justify;
     font-size: 20px;
 }
+
+
+
+/* -------------------------------- CONTACTO ------------------------------------- */
+
+.formulario label{
+    color: white;
+}
+
+.formulario button{
+    color: White;
+    border: 2px solid white;
+}

@@ -5,128 +5,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>HARRY POTTER - Contacto</title>
 </head>
 
 <body>
 
     <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h1 class="titulo">HARRY POTTER</h1>
+                </div>
+                <div class="col-7">
+
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid ">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon bg-dark"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../pages/personajes.html">Personajes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../pages/peliculas.html">Peliculas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
 
 
-        <h1 class="cabecera__titulo">HARRY POTTER</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./personajes.html">Personajes</a></li>
-                <li><a href="./peliculas.html">Peliculas</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-
+            </div>
+        </div>
     </header>
+    <hr>
+    <!-- ############################################################### FORMULARIO ################################################### -->
+
+    <div class="container-fluid formulario">
+
+        <div class="container-4">
+            <div class="d-flex justify-content-center p-2">
+                <div class="col col-sm-12 col-md-5">
+                    <form needs-validation>
+                    <div class="mb-3">
+                        <label for="inputNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre Apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTipo" class="form-label">Tipo</label>
+                        <select class="form-select" aria-label="Default select example" id="inputTipo" required>
+                            <option selected>Elija una opcion</option>
+                            <option value="1">Sugerencia</option>
+                            <option value="2">Reclamo</option>
+                            <option value="3">Aportes</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputObservacion" class="form-label">Observaciones</label>
+                        <textarea class="form-control" id="InputObservacion" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn " type="submit">Enviar >></button>
+                    </div>
+                </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
     <hr>
 
-    <main>
-        <div class="contenedor">
 
+    <!-- ############################################################### FOOTER ################################################### -->
 
-            <div class="imagen-contenedor"></div>
-
-            <section class="formulario">
-                <h2>Contactanos</h2>
-
-
-                <form>
-                    <label for="campo-nombre">Nombre y apellido:</label>
-                    <input type="text" id="campo-nombre" placeholder="Nombre y Apellido" required>
-
-                    <label for="campo-mail">Email:</label>
-                    <input type="email" id="campo-mail" placeholder="mail@mail.cl" required>
-
-                    <label for="tipo">Motivo:</label>
-                    <select name="select" id="tipo">
-                        <option selected="selected" value="Sugerencia">Sugerencia</option>
-                        <option value="Contenido">Contenido</option>
-                        <option value="Reclamos">Reclamos</option>
-                    </select>
-
-
-                    <label>Observacion</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-
-
-                    <input class="boton" type="submit" value="Enviar mensaje">
-                    <input class="boton" type="reset" value="Borrar Formulario">
-
-
-                </form>
-
-
-            </section>
-        </div>
-
-        <hr>
-
-        <footer>
-            <section class="columna">
-    
-                <div>
-    
-                    <h2>Mapa del Sitio</h2>
-    
+    <div class="container-fluid contenedor-footer">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+                <h4>Mapa del Sitio</h4>
+                <div class="d-flex justify-content-start">
                     <nav>
                         <ul>
                             <li>
-                                <h3><a href="./pages/personajes.html">Personajes</a></h3>
+                                <h6><a href="../pages/personajes.html">Personajes</a></h6>
                             </li>
                             <li>
-                                <h3><a href="./pages/peliculas.html">Peliculas</a></h3>
+                                <h6><a href="../pages/peliculas.html">Peliculas</a></h6>
                             </li>
                             <li>
-                                <h3><a href="./pages/noticias.html">Noticias</a></h3>
+                                <h6><a href="../pages/noticias.html">Noticias</a></h6>
                             </li>
                             <li>
-                                <h3><a href="./pages/Contacto.html">Contacto</a></h3>
+                                <h6><a href="../pages/Contacto.html">Contacto</a></h6>
                             </li>
                         </ul>
                     </nav>
-    
                 </div>
-    
-                <div>
-                    <h2>Siguenos!</h2>
-    
-                    <div class="redes">
-    
-                        <img class="imgredes" src="../img/youtube.png" alt="">
-    
-    
-    
-                        <img class="imgredes" src="../img/facebook.png" alt="">
-    
-    
-    
-                        <img class="imgredes" src="../img/twich.png" alt="">
-    
-                    </div>
-                </div>
-    
-                <div class="final">
-                    <h2>HARRY POTTER</h2>
-    
-                    <p>© 1998-2022 AS Informática SL
-                        Todos los derechos reservados.</p>
-    
-            </section>
             </div>
-    
-        </footer>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+                <h4>Redes Sociales</h4>
+                <div class="d-flex justify-content-around flex-sm-row flex-md-row flex-lg-row">
+                    <img class="imgredes" src="../img/youtube.png" alt="">
+                    <img class="imgredes" src="../img/facebook.png" alt="">
+                    <img class="imgredes" src="../img/twich.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+                <h2>HARRY POTTER</h2>
+
+                <p>© 1998-2022 AS Informática SL
+                    Todos los derechos reservados.</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
 </html>
