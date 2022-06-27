@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------- HEADER ------------------------------------- */
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: harryFont;
+    src: url(../HARRYP.TTF);
+}
+hr{
+    color: white;
+}
+
+.titulo {
+    font-family: harryFont;
+    font-size: 60px;
+    text-align: left;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar span {
+    color: white;
+}
+
+.navbar button {
+    color: white;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: red;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    justify-content: flex-end;
+}
+
+
+/* -------------------------------- SLIDER ------------------------------------- */
+
+.col-video {
+    padding: 0;
+}
+
+.video {
+    width: 100%;
+}
+
+
+/* -------------------------------- CONTENIDO ------------------------------------- */
+/* -------------------------------- PERSONAJE ------------------------------------- */
+.personaje {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.personaje h2 {
+    color: white;
+    font-family: harryFont;
+    font-size: 40px;
+    text-align: center;
+}
+
+.personaje h4 {
+    color: white;
+    text-align: left;
+}
+
+.personaje img {
+    width: 100%;
+    padding: 10px;
+}
+
+.personaje p {
+    color: white;
+    text-align: justify;
+}
+
+.personaje .btn {
+    color: white;
+    width: 100%;
+    border: 2px solid gray;
+    margin-bottom: 10px;
+
+}
+
+.personaje .btn:hover {
+    border: 2px solid red;
+}
+
+/* -------------------------------- PELICULA ------------------------------------- */
+
+.pelicula {
+    border: 2px solid white;
+    border-radius: 10px;
+
+
+}
+
+.pelicula h2 {
+    color: white;
+    font-family: harryFont;
+    font-size: 40px;
+    text-align: center;
+}
+
+.pelicula h4 {
+    color: white;
+    text-align: left;
+}
+
+.pelicula img {
+    width: 100%;
+    padding: 10px;
+}
+
+.pelicula p {
+    color: white;
+    text-align: justify;
+}
+
+.pelicula .btn {
+    color: white;
+    width: 100%;
+    border: 2px solid gray;
+}
+
+.pelicula .btn:hover {
+    border: 2px solid red;
+}
+
+.titulo-pelicula h4 {
+    text-align: right;
+}
+
+/* -------------------------------- NOTICIA ------------------------------------- */
+
+.noticia {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.noticia h2{
+    color: white;
+    font-family: harryFont;
+    font-size: 40px;
+    text-align: center;
+}
+.noticia h4 {
+    color: white;
+}
+
+.noticia p {
+    color: white;
+    text-align: justify;
+}
+
+.noticia img {
+    width: 50vw;
+    height: 50vh;
+}
+
+.detalle-noticia {
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.616);
+
+    position: absolute;
+    bottom: 10%;
+    left: 5vw;
+    width: 90vw;
+}
+
+/* -------------------------------- FOOTER ------------------------------------- */
+
+.contenedor-footer{
+
+}
+
+.contenedor-footer h4{
+color: white;
+}
+
+.contenedor-footer ul li{
+    list-style-type: none;
+    color: white;
+ }
+
+.contenedor-footer ol, ul{
+    padding-left: 0;
+    }
+
+.contenedor-footer a{
+    text-decoration: none;
+}
+
+.contenedor-footer img{
+width: 50px;
+padding: 5px;
+}
+
+.contenedor-footer h2{
+    color: white;
+    font-family: harryFont;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contenedor-footer p{
+    color: white;
+    font-family: harryFont;
+    text-align: justify;
+    font-size: 20px;
+}
