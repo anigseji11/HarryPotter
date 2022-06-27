@@ -254,3 +254,15 @@ padding: 5px;
     color: White;
     border: 2px solid white;
 }
+
+/* -------------------------------- PERSONAJES ------------------------------------- */
+
+.card{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.card img{
+    padding: 15px;
+}
