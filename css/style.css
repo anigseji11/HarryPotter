@@ -8,6 +8,9 @@
 
 body {
     background-color: black;
+    background-image: url(../img/old-black.jpg);
+    background-repeat: round;
+    background-size: cover;
 }
 
 @font-face {
@@ -17,6 +20,11 @@ body {
 hr{
    
     color: white;
+}
+
+.bg-dark{
+    color: white;
+    background-color: red;
 }
 
 .bgdark{
@@ -33,7 +41,7 @@ hr{
 }
 
 .navbar {
-    background-color: black;
+    background-color: transparent;
 }
 
 .navbar span {
@@ -46,6 +54,7 @@ hr{
 
 .navbar ul li a {
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar .nav-link:hover {
@@ -278,6 +287,12 @@ padding: 5px;
 
 /* -------------------------------- PELICULAS ------------------------------------- */
 
+.container-pelicula{
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
 .container-pelicula h6{
     color: white;
 }
@@ -303,4 +318,51 @@ padding: 5px;
 
 .table tbody, td, tfoot, th, thead, tr {
     color: white;
+}
+
+/* -------------------------------- NOTICIAS ------------------------------------- */
+
+/* .caja  {
+    border: 3px solid red;
+    
+}
+
+.caja2  {
+   
+    border: 2px solid blue;
+}
+
+.caja3  {
+    
+    border: 2px solid violet;
+} */
+
+.contenedor-noticias img{
+    width: 100%;
+    margin: 5px;
+}
+
+.contenedor-noticias h5{
+    color: white;
+}
+
+.contenedor-noticias h6{
+    color: rgb(156, 155, 155);
+}
+
+.contenedor-noticias p{
+    color: white;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor-slider {
+    margin-bottom: 30px;
+}
+
+.tituloNoticias {
+    color: white;
+    font-family: harryFont;
+    text-align: center;
+    font-size: 40px;
 }
