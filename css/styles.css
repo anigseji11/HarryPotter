@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.gryffindor {
+    border: 2px solid #6d0000 ;
+      color: white;
+  }
+
+  .gryffindor:hover{
+    border: 2px solid #c6a513 ;
+      color: white;
+  }
+
+ 
+
+@font-face {
+    font-family: harryFont;
+    src: url(../HARRYP.TTF);
+}
+
+.fuente {
+    color: black;
+    font-family: harryFont;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.white {
+    color: white;
+}
+
+.color1 {
+    background-color: #04293A;
+}
+
+.color2 {
+    background-color: #064663;
+}
+
+header {
+    position: relative;
+    z-index: 100;
+}
+
+header h1 {
+    font-family: harryFont;
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+header img {
+    width: 100%;
+}
+
+.navegacion{
+    background-color: white;
+}
+
+
+.slider {
+    padding: 0px;
+}
+
+.slider img {
+    object-fit: cover;
+
+}
+
+.personaje {
+    border-radius: 30px;
+    
+}
+
+.personaje h2 {
+    text-align: center;
+}
+
+.personaje h6{
+    text-align: justify;
+}
+
+.personaje img {
+    border-radius: 30px;
+}
+
+.casa{
+    width: 15%;
+  }
+
+
+/* NOTICIAS */
+
+.noticias{
+    border-radius: 30px;
+}
+
+.noticias a{
+    text-decoration: none;
+    color: white;
+}
+
+.portada {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 15px;
+
+}
+
+
+.foot a{
+    text-decoration: none;
+    color: black;
+}
+.foot ul li{
+    
+    list-style-type: none;
+}
+
+.foot img{
+    width: 7vh;
+    
+}
+
+.foot h4{
+    text-align: center;
+}
+
+.foot p{
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    header h1 {
+        font-family: harryFont;
+        font-size: 5rem;
+    }
+
+    .fuente{
+        font-size: 3rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 991px) {
+    header h1 {
+        font-family: harryFont;
+        font-size: 5rem;
+    }
+
+    .fuente{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header h1 {
+        font-family: harryFont;
+        font-size: 4rem;
+    }
+    .fuente{
+        font-size: 2rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    header h1 {
+        font-family: harryFont;
+        font-size: 2rem;
+    }
+    .fuente{
+        font-size: 2rem;
+    }
+}

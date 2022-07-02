@@ -33,11 +33,9 @@ hr{
 
 .titulo {
     font-family: harryFont;
-    font-size: 60px;
-    text-align: left;
-    padding-top: 20px;
+      
     color: white;
-    text-align: center;
+   
 }
 
 .navbar {
@@ -77,13 +75,25 @@ hr{
 
 
 /* -------------------------------- SLIDER ------------------------------------- */
+.cont-video{
 
+    -webkit-box-shadow: inset 5px 200px 218px -63px rgba(240, 10, 10, 0.75);
+    -moz-box-shadow: inset 5px 200px 218px -63px rgba(243, 12, 12, 0.75);
+    box-shadow: inset 5px 200px 218px -63px rgba(247, 5, 5, 0.75);
+}
 .col-video {
     padding: 0;
+    -webkit-box-shadow: inset 5px 200px 218px -63px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 5px 200px 218px -63px rgba(0,0,0,0.75);
+box-shadow: inset 5px 200px 218px -63px rgba(0,0,0,0.75);
 }
+
+
 
 .video {
     width: 100%;
+   
+   
 }
 
 
