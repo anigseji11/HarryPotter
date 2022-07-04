@@ -7,16 +7,16 @@
 
 
 .gryffindor {
-    border: 2px solid #6d0000 ;
-      color: white;
-  }
+    border: 2px solid #6d0000;
+    color: white;
+}
 
-  .gryffindor:hover{
-    border: 2px solid #c6a513 ;
-      color: white;
-  }
+.gryffindor:hover {
+    border: 2px solid #c6a513;
+    color: white;
+}
 
- 
+
 
 @font-face {
     font-family: harryFont;
@@ -29,6 +29,7 @@
     font-size: 2rem;
     text-align: center;
     font-weight: 600;
+
 }
 
 .white {
@@ -58,7 +59,8 @@ header img {
     width: 100%;
 }
 
-.navegacion{
+
+.navegacion {
     background-color: white;
 }
 
@@ -74,14 +76,14 @@ header img {
 
 .personaje {
     border-radius: 30px;
-    
+
 }
 
 .personaje h2 {
     text-align: center;
 }
 
-.personaje h6{
+.personaje h6 {
     text-align: justify;
 }
 
@@ -89,18 +91,18 @@ header img {
     border-radius: 30px;
 }
 
-.casa{
+.casa {
     width: 15%;
-  }
+}
 
 
 /* NOTICIAS */
 
-.noticias{
+.noticias {
     border-radius: 30px;
 }
 
-.noticias a{
+.noticias a {
     text-decoration: none;
     color: white;
 }
@@ -116,26 +118,48 @@ header img {
 }
 
 
-.foot a{
+.foot a {
     text-decoration: none;
     color: black;
 }
-.foot ul li{
-    
+
+.foot ul li {
+
     list-style-type: none;
 }
 
-.foot img{
+.foot img {
     width: 7vh;
-    
+
 }
 
-.foot h4{
+.foot h4 {
     text-align: center;
 }
 
-.foot p{
+.foot p {
     text-align: center;
+}
+
+
+/* ############################### PAGINA PERSONAJES ############################## */
+.marco {
+    -webkit-box-shadow: inset -1px -2px 38px 33px rgba(6, 70, 99, 1);
+    -moz-box-shadow: inset -1px -2px 38px 33px rgba(6, 70, 99, 1);
+    box-shadow: inset -1px -2px 38px 33px rgba(6, 70, 99, 1);
+
+    border-radius: 72px 200px 200px 72px;
+    -moz-border-radius: 72px 200px 200px 72px;
+    -webkit-border-radius: 72px 200px 200px 72px;
+    border: 0px solid #000000;
+}
+
+.zoom {
+    transition: transform .7s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -144,7 +168,7 @@ header img {
         font-size: 5rem;
     }
 
-    .fuente{
+    .fuente {
         font-size: 3rem;
     }
 
@@ -157,7 +181,7 @@ header img {
         font-size: 5rem;
     }
 
-    .fuente{
+    .fuente {
         font-size: 3rem;
     }
 }
@@ -167,7 +191,8 @@ header img {
         font-family: harryFont;
         font-size: 4rem;
     }
-    .fuente{
+
+    .fuente {
         font-size: 2rem;
     }
 }
@@ -179,7 +204,8 @@ header img {
         font-family: harryFont;
         font-size: 2rem;
     }
-    .fuente{
+
+    .fuente {
         font-size: 2rem;
     }
 }
