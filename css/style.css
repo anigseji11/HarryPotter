@@ -1,378 +1,176 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* -------------------------------- HEADER ------------------------------------- */
-
-body {
-    background-color: black;
-    background-image: url(../img/old-black.jpg);
-    background-repeat: round;
-    background-size: cover;
-}
-
+/* Color Theme Swatches in Hex */
 @font-face {
-    font-family: harryFont;
-    src: url(../HARRYP.TTF);
+  font-family: harryFont;
+  src: url(../HARRYP.TTF);
 }
-hr{
-   
-    color: white;
-}
-
-.bg-dark{
-    color: white;
-    background-color: red;
+.color1 {
+  background-color: #012D47;
 }
 
-.bgdark{
-    background-color:rgb(184, 189, 189);
+.color2 {
+  background-color: #015E94;
 }
 
-.titulo {
-    font-family: harryFont;
-      
-    color: white;
-   
+.white {
+  color: white;
 }
 
-.navbar {
-    background-color: transparent;
+.fuente {
+  color: black;
+  font-family: harryFont;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1024px) {
+  .fuente {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .fuente {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .fuente {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .fuente {
+    font-size: 2rem;
+  }
 }
 
-.navbar span {
-    color: white;
+header {
+  position: relative;
+  z-index: 100;
+}
+header h1 {
+  font-family: harryFont;
+  font-size: 6rem;
+  font-weight: 800;
+}
+@media only screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+header img {
+  width: 100%;
 }
 
-.navbar button {
-    color: white;
+.navegacion {
+  background-color: white;
 }
 
-.navbar ul li a {
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.slider {
+  padding: 0px;
+}
+.slider img {
+  object-fit: cover;
 }
 
-.navbar .nav-link:hover {
-    color: red;
+.foot a {
+  text-decoration: none;
+  color: black;
+}
+.foot ul li {
+  list-style-type: none;
+}
+.foot img {
+  width: 7vh;
+}
+.foot h4 {
+  text-align: center;
+}
+.foot p {
+  text-align: center;
 }
 
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-
-.navbar>.container,
-.navbar>.container-fluid,
-.navbar>.container-lg,
-.navbar>.container-md,
-.navbar>.container-sm,
-.navbar>.container-xl,
-.navbar>.container-xxl {
-    justify-content: flex-end;
-}
-
-
-/* -------------------------------- SLIDER ------------------------------------- */
-.cont-video{
-
-    -webkit-box-shadow: inset 5px 200px 218px -63px rgba(240, 10, 10, 0.75);
-    -moz-box-shadow: inset 5px 200px 218px -63px rgba(243, 12, 12, 0.75);
-    box-shadow: inset 5px 200px 218px -63px rgba(247, 5, 5, 0.75);
-}
-.col-video {
-    padding: 0;
-    -webkit-box-shadow: inset 5px 200px 218px -63px rgba(0,0,0,0.75);
--moz-box-shadow: inset 5px 200px 218px -63px rgba(0,0,0,0.75);
-box-shadow: inset 5px 200px 218px -63px rgba(0,0,0,0.75);
-}
-
-
-
-.video {
-    width: 100%;
-   
-   
-}
-
-
-/* -------------------------------- CONTENIDO ------------------------------------- */
-/* -------------------------------- PERSONAJE ------------------------------------- */
 .personaje {
-    border: 2px solid white;
-    border-radius: 10px;
-    margin-bottom: 20px;
+  border-radius: 30px;
 }
-
 .personaje h2 {
-    color: white;
-    font-family: harryFont;
-    font-size: 40px;
-    text-align: center;
+  text-align: center;
 }
-
-.personaje h4 {
-    color: white;
-    text-align: left;
+.personaje h6 {
+  text-align: justify;
 }
-
 .personaje img {
-    width: 100%;
-    padding: 10px;
+  border-radius: 0px 0px 0px 90px;
 }
 
-.personaje p {
-    color: white;
-    text-align: justify;
+.casa {
+  width: 15%;
 }
 
-.personaje .btn {
-    color: white;
-    width: 100%;
-    border: 2px solid gray;
-    margin-bottom: 10px;
-
+.gryffindor {
+  border: none;
+  background-color: #6d0000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+.gryffindor:hover {
+  background-color: #c6a513;
+  color: black;
 }
 
-.personaje .btn:hover {
-    border: 2px solid red;
+.marco {
+  -webkit-box-shadow: inset -1px -2px 38px 33px rgb(6, 70, 99);
+  -moz-box-shadow: inset -1px -2px 38px 33px rgb(6, 70, 99);
+  box-shadow: inset -1px -2px 38px 33px rgb(6, 70, 99);
+  border-radius: 0px 100px 0px 100px;
+  -moz-border-radius: 0px 100px 0px 100px;
+  -webkit-border-radius: 0px 100px 0px 100px;
+  border: 16px solid #015E94;
 }
 
-/* -------------------------------- PELICULA ------------------------------------- */
-
-.pelicula {
-    border: 2px solid white;
-    border-radius: 10px;
-
-
+.zoom {
+  transition: transform 1s;
+}
+.zoom:hover {
+  transform: scale(1.1);
 }
 
-.pelicula h2 {
-    color: white;
-    font-family: harryFont;
-    font-size: 40px;
-    text-align: center;
+.noticias {
+  border-radius: 30px;
+}
+.noticias a {
+  text-decoration: none;
+  color: white;
 }
 
-.pelicula h4 {
-    color: white;
-    text-align: left;
+.portada {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 15px;
 }
 
-.pelicula img {
-    width: 100%;
-    padding: 10px;
-}
-
-.pelicula p {
-    color: white;
-    text-align: justify;
-}
-
-.pelicula .btn {
-    color: white;
-    width: 100%;
-    border: 2px solid gray;
-}
-
-.pelicula .btn:hover {
-    border: 2px solid red;
-}
-
-.titulo-pelicula h4 {
-    text-align: right;
-}
-
-/* -------------------------------- NOTICIA ------------------------------------- */
-
-.noticia {
-    margin-top: 20px;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-.noticia h2{
-    color: white;
-    font-family: harryFont;
-    font-size: 40px;
-    text-align: center;
-}
-.noticia h4 {
-    color: white;
-}
-
-.noticia p {
-    color: white;
-    text-align: justify;
-}
-
-.noticia img {
-    width: 50vw;
-    height: 50vh;
-}
-
-.detalle-noticia {
-    font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.616);
-
-    position: absolute;
-    bottom: 10%;
-    left: 5vw;
-    width: 90vw;
-}
-
-/* -------------------------------- FOOTER ------------------------------------- */
-
-.contenedor-footer{
-
-}
-
-.contenedor-footer h4{
-color: white;
-}
-
-.contenedor-footer ul li{
-    list-style-type: none;
-    color: white;
- }
-
-.contenedor-footer ol, ul{
-    padding-left: 0;
-    }
-
-.contenedor-footer a{
-    text-decoration: none;
-}
-
-.contenedor-footer img{
-width: 50px;
-padding: 5px;
-}
-
-.contenedor-footer h2{
-    color: white;
-    font-family: harryFont;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.contenedor-footer p{
-    color: white;
-    font-family: harryFont;
-    text-align: justify;
-    font-size: 20px;
-}
-
-
-
-/* -------------------------------- CONTACTO ------------------------------------- */
-
-.formulario label{
-    color: white;
-}
-
-.formulario button{
-    color: White;
-    border: 2px solid white;
-}
-
-/* -------------------------------- PERSONAJES ------------------------------------- */
-
-.card{
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-}
-
-.card img{
-    padding: 15px;
-}
-
-.card .foto-casa{
-    width: 100px;
-}
-
-/* -------------------------------- PELICULAS ------------------------------------- */
-
-.container-pelicula{
-    border: 2px solid white;
-    border-radius: 20px;
-    margin-bottom: 30px;
-}
-
-.container-pelicula h6{
-    color: white;
-}
-
-.container-pelicula p{
-    color: white;
-    text-align: justify;
-}
-.container-pelicula iframe{
-    width: 100%;
-    height: 100%;
-    min-height: 500px;
-}
-
-.table{
-    border: 2px solid white ;
-    border-radius: 10px;
-}
-
-.table thead tr th {
-    color: white;
-}
-
-.table tbody, td, tfoot, th, thead, tr {
-    color: white;
-}
-
-/* -------------------------------- NOTICIAS ------------------------------------- */
-
-/* .caja  {
-    border: 3px solid red;
-    
-}
-
-.caja2  {
-   
-    border: 2px solid blue;
-}
-
-.caja3  {
-    
-    border: 2px solid violet;
-} */
-
-.contenedor-noticias img{
-    width: 100%;
-    margin: 5px;
-}
-
-.contenedor-noticias h5{
-    color: white;
-}
-
-.contenedor-noticias h6{
-    color: rgb(156, 155, 155);
-}
-
-.contenedor-noticias p{
-    color: white;
-    text-align: justify;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.contenedor-slider {
-    margin-bottom: 30px;
-}
-
-.tituloNoticias {
-    color: white;
-    font-family: harryFont;
-    text-align: center;
-    font-size: 40px;
-}
+/*# sourceMappingURL=style.css.map */

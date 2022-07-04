@@ -1,0 +1,22 @@
+.foot {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    & ul li {
+        list-style-type: none;
+    }
+
+    & img {
+        width: 7vh;
+    }
+
+    & h4 {
+        text-align: center;
+    }
+
+    & p {
+        text-align: center;
+    }
+}

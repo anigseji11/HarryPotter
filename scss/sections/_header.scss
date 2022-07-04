@@ -1,0 +1,27 @@
+header {
+    position: relative;
+    z-index: 100;
+
+    & h1 {
+        font-family: harryFont;
+        font-size: 6rem;
+        font-weight: 800;
+        @include r1024 {
+            font-size: 5rem;
+        }
+        @include r991 {
+            font-size: 5rem;
+        }
+        @include r767 {
+            font-size: 4rem;
+        }
+        @include r575{
+            font-size: 2rem;
+        }
+      }
+    & img {
+        width: 100%;
+    }
+}
+
+

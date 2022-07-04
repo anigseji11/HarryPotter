@@ -1,0 +1,24 @@
+@mixin r1024 {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin r991 {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin r767 {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+
+}
+
+@mixin r575 {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}

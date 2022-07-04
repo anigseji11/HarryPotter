@@ -1,0 +1,17 @@
+.noticias {
+    border-radius: 30px;
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.portada {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 15px;
+
+}

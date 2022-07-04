@@ -1,0 +1,55 @@
+.personaje {
+    border-radius: 30px;
+
+    & h2 {
+        text-align: center;
+    }
+
+    & h6 {
+        text-align: justify;
+    }
+
+    & img {
+        border-radius: 0px 0px 0px 90px;
+    }
+}
+
+.casa {
+    width: 15%;
+}
+
+.gryffindor {
+    border: none;
+    background-color: $color-gryffindor;
+    color: white;
+    cursor: pointer;
+    transition: background-color 200ms ease,
+        color 200ms ease;
+
+    &:hover {
+        background-color: $color-gryffindor-gold;
+        color: black;
+    }
+}
+
+
+.marco {
+    -webkit-box-shadow: inset -1px -2px 38px 33px rgba(6, 70, 99, 1);
+    -moz-box-shadow: inset -1px -2px 38px 33px rgba(6, 70, 99, 1);
+    box-shadow: inset -1px -2px 38px 33px rgba(6, 70, 99, 1);
+
+
+    border-radius: 0px 100px 0px 100px;
+    -moz-border-radius: 0px 100px 0px 100px;
+    -webkit-border-radius: 0px 100px 0px 100px;
+    border: 16px solid #015E94;
+
+}
+
+.zoom {
+    transition: transform 1s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

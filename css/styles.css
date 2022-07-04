@@ -1,10 +1,10 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-
+/* 
 
 .gryffindor {
     border: 2px solid #6d0000;
@@ -14,11 +14,11 @@
 .gryffindor:hover {
     border: 2px solid #c6a513;
     color: white;
-}
+} */
 
 
 
-@font-face {
+/* @font-face {
     font-family: harryFont;
     src: url(../HARRYP.TTF);
 }
@@ -30,9 +30,9 @@
     text-align: center;
     font-weight: 600;
 
-}
+} */
 
-.white {
+/* .white {
     color: white;
 }
 
@@ -42,9 +42,9 @@
 
 .color2 {
     background-color: #064663;
-}
+} */
 
-header {
+/* header {
     position: relative;
     z-index: 100;
 }
@@ -57,24 +57,24 @@ header h1 {
 
 header img {
     width: 100%;
-}
+} */
 
 
-.navegacion {
+/* .navegacion {
     background-color: white;
-}
+} */
 
 
-.slider {
+/* .slider {
     padding: 0px;
 }
 
 .slider img {
     object-fit: cover;
 
-}
+} */
 
-.personaje {
+/* .personaje {
     border-radius: 30px;
 
 }
@@ -93,11 +93,11 @@ header img {
 
 .casa {
     width: 15%;
-}
+} */
 
 
 /* NOTICIAS */
-
+/* 
 .noticias {
     border-radius: 30px;
 }
@@ -115,9 +115,9 @@ header img {
     background-color: rgba(0, 0, 0, 0.616);
     padding: 15px;
 
-}
+} */
 
-
+/* 
 .foot a {
     text-decoration: none;
     color: black;
@@ -139,6 +139,24 @@ header img {
 
 .foot p {
     text-align: center;
+} */
+
+.mv-img {
+    position: relative;
+}
+
+.mv-img:after {
+    box-shadow: inset -5px -50px 100px -15px #000000;
+    -webkit-box-shadow: inset -5px -50px 100px -15px #000000;
+    -moz-box-shadow: inset -5px -50px 100px -15px #000000;
+    -o-box-shadow: inset -5px -50px 100px -15px #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
 }
 
 
@@ -162,7 +180,7 @@ header img {
     transform: scale(1.1);
 }
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     header h1 {
         font-family: harryFont;
         font-size: 5rem;
@@ -172,10 +190,10 @@ header img {
         font-size: 3rem;
     }
 
-}
+} */
 
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     header h1 {
         font-family: harryFont;
         font-size: 5rem;
@@ -184,9 +202,9 @@ header img {
     .fuente {
         font-size: 3rem;
     }
-}
+} */
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     header h1 {
         font-family: harryFont;
         font-size: 4rem;
@@ -195,11 +213,11 @@ header img {
     .fuente {
         font-size: 2rem;
     }
-}
+} */
 
 
 
-@media only screen and (max-width: 575px) {
+/* @media only screen and (max-width: 575px) {
     header h1 {
         font-family: harryFont;
         font-size: 2rem;
@@ -208,4 +226,4 @@ header img {
     .fuente {
         font-size: 2rem;
     }
-}
+} */
