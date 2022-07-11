@@ -9,92 +9,67 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Harry Potter - Noticias</title>
 </head>
 
 <body>
+    <header class="container-fluid sticky-top navegacion">
+        <div class="row flex-row  align-items-center">
+            <div class="col-6">
+                <h1 class="text-center">Harry Potter</h1>
+            </div>
+            <div class="col-6">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid justify-content-end ">
 
-
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-5">
-                    <h1 class="titulo">HARRY POTTER</h1>
-                </div>
-                <div class="col-7">
-
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid ">
-
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon bg-dark"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../pages/personajes.html">Personajes</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../pages/peliculas.html">Peliculas</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../pages/noticias.html">Noticias</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                                    </li>
-
-                                </ul>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <img class="w-25" src="../img/deathly-hallows-96.png" alt="">
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link text-end active" aria-current="page" href="../index.html">HOME</a>
+                                <a class="nav-link text-end" href="./personajes.html">PERSONAJES</a>
+                                <a class="nav-link text-end" href="./peliculas.html">PELICULAS</a>
+                                <a class="nav-link text-end" href="./noticias.html">NOTICIAS</a>
+                                <a class="nav-link text-end" href="./contacto.html">CONTACTO</a>
                             </div>
                         </div>
-                    </nav>
-
-                </div>
-
-
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
-    <hr>
+
     <!-- ############################################################### NOTICIAS ################################################### -->
 
-    <div class="container-fluid contenedor-slider">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/harry-potter-panorama.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
+    <div class="container-fluid fondo">
+        <div class="row justify-content-center">
+            <img src="../img/Hogwarts.png" class="w-75" alt="...">
         </div>
     </div>
 
-    <h2 class="tituloNoticias">NOTICIAS</h2>
+    <h2 class="fuente mt-3">NOTICIAS</h2>
 
-    <div class="container caja contenedor-noticias">
-        <div class="row justify-content-evenly caja2">
+    <div class="container">
+        <div class="row justify-content-evenly">
             <div class="col-10 offset-0 col-sm-10 offset-sm-0 col-md-10 col-lg-5 col-xl-4 mb-3 caja3">
-                <img src="../img/noticia2.jpg" alt="">
+                <img class="w-100 mb-2" src="../img/noticia2.jpg" alt="">
                 <div class="row">
                     <div class="d-flex flex-row justify-content-between">
                         <h5>NOTICIA 1</h5>
                         <h6>01/01/2022</h6>
                     </div>
-
                 </div>
-
-
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ad dicta porro alias qui, sunt
                     recusandae quae voluptatibus, dignissimos explicabo veniam voluptas nobis aut odit voluptatem, enim
                     distinctio amet nulla.</p>
             </div>
 
             <div class="col-10 offset-0 col-sm-10 offset-sm-0 col-md-10 col-lg-5 col-xl-4  mb-3 caja3">
-                <img src="../img/noticia1.jpg" alt="">
+                <img class="w-100 mb-2" src="../img/noticia1.jpg" alt="">
                 <div class="row">
                     <div class="d-flex flex-row justify-content-between">
                         <h5>NOTICIA 2</h5>
@@ -108,7 +83,7 @@
             </div>
 
             <div class="col-10 offset-0 col-sm-10 offset-sm-0 col-md-10 col-lg-5 col-xl-4  mb-3 caja3">
-                <img src="../img/noticia2.jpg" alt="">
+                <img class="w-100 mb-2" src="../img/noticia2.jpg" alt="">
                 <div class="row">
                     <div class="d-flex flex-row justify-content-between">
                         <h5>NOTICIA 3</h5>
@@ -127,52 +102,46 @@
 
 
 
-    <!-- ############################################################### FOOTER ################################################### -->
-    <hr>
+    <!-- ######################################################## FOOTER ################################################################ -->
+
+    <footer class="container-fluid mt-5 foot shadow">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+
+                <h4 class="fw-bold">Mapa del Sitio</h4>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <p><a class="h5" href="./personajes.html">Personajes</a></p>
+                        </li>
+                        <li>
+                            <p><a class="h5" href="./peliculas.html">Peliculas</a></p>
+                        </li>
+                        <li>
+                            <p><a class="h5" href="./noticias.html">Noticias</a></p>
+                        </li>
+                        <li>
+                            <p><a class="h5" href="./Contacto.html">Contacto</a></p>
+                        </li>
+                    </ul>
+                </nav>
 
 
-    <footer>
-
-        <div class="container-fluid contenedor-footer">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
-                    <h4>Mapa del Sitio</h4>
-                    <div class="d-flex justify-content-start">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <h6><a href="../pages/personajes.html">Personajes</a></h6>
-                                </li>
-                                <li>
-                                    <h6><a href="../pages/peliculas.html">Peliculas</a></h6>
-                                </li>
-                                <li>
-                                    <h6><a href="../pages/noticias.html">Noticias</a></h6>
-                                </li>
-                                <li>
-                                    <h6><a href="../pages/Contacto.html">Contacto</a></h6>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-between">
+                <h4 class="fw-bold">Redes Sociales</h4>
+                <div class="d-flex justify-content-around flex-sm-row flex-md-row flex-lg-row mt-3">
+                    <i class="bi bi-facebook facebook" ></i>
+                    <i class="bi bi-youtube youtube"></i>
+                    <i class="bi bi-twitch twich"></i>
                 </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center mt-3">
+                <h2 class="fuente">HARRY POTTER</h2>
 
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
-                    <h4>Redes Sociales</h4>
-                    <div class="d-flex justify-content-around flex-sm-row flex-md-row flex-lg-row">
-                        <img class="imgredes" src="../img/youtube.png" alt="">
-                        <img class="imgredes" src="../img/facebook.png" alt="">
-                        <img class="imgredes" src="../img/twich.png" alt="">
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
-                    <h2>HARRY POTTER</h2>
-
-                    <p>© 1998-2022 AS Informática SL
-                        Todos los derechos reservados.</p>
-                </div>
-
+                <p>© 1998-2022 AS Informática SL
+                    Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

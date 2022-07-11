@@ -32,6 +32,22 @@
     }
 }
 
+.gryffindor-gold {
+
+    @extend .gryffindor;
+    background-color: $color-gryffindor-gold;
+    color: $Harry-potter-cover-1-hex;
+
+    &:hover {
+        background-color: $color-gryffindor;
+        color: white;
+    }
+}
+
+
+
+
+
 
 .marco {
     -webkit-box-shadow: inset -1px -2px 38px 33px rgba(6, 70, 99, 1);

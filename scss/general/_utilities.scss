@@ -1,33 +1,36 @@
-.color1{
-   background-color: $Harry-potter-cover-1-hex;
+.color1 {
+    background-color: $Harry-potter-cover-1-hex;
 }
 
-.color2{
+.color2 {
     background-color: $Harry-potter-cover-5-hex;
- }
+}
 
- .white {
-   color: white;
+.white {
+    color: white;
 }
 
 .fuente {
-   color: black;
-   font-family: harryFont;
-   font-size: 2rem;
-   text-align: center;
-   font-weight: 600;
-   
-   @include r1024 {
-      font-size: 3rem;
-  }
-  @include r991 {
-      font-size: 3rem;
-  }
-  @include r767 {
-      font-size: 2rem;
-  }
-  @include r575{
-      font-size: 2rem;
-  }
+    color: black;
+    font-family: harryFont;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+
+    @include r1024 {
+        @include fontSize( 3rem, 600);
+    }
+
+    @include r991 {
+        @include fontSize( 3rem, 600);
+    }
+
+    @include r767 {
+        @include fontSize( 2rem, 400);
+    }
+
+    @include r575 {
+        @include fontSize( 2rem, 400);
+    }
 
 }

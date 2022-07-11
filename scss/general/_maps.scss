@@ -1,0 +1,18 @@
+$redes-sociales:(
+    Youtube: red,
+    Facebook: blue,
+    Twich: purple,
+);
+
+
+.youtube{
+    color: map-get($map: $redes-sociales, $key: Youtube )
+}
+
+.facebook{
+    color: map-get($map: $redes-sociales, $key: Facebook )
+}
+
+.twich{
+    color: map-get($map: $redes-sociales, $key: Twich )
+}

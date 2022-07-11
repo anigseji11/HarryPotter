@@ -31,22 +31,38 @@
 @media only screen and (min-width: 1024px) {
   .fuente {
     font-size: 3rem;
+    font-weight: 600;
   }
 }
 @media only screen and (max-width: 991px) {
   .fuente {
     font-size: 3rem;
+    font-weight: 600;
   }
 }
 @media only screen and (max-width: 767px) {
   .fuente {
     font-size: 2rem;
+    font-weight: 400;
   }
 }
 @media only screen and (max-width: 575px) {
   .fuente {
     font-size: 2rem;
+    font-weight: 400;
   }
+}
+
+.youtube {
+  color: red;
+}
+
+.facebook {
+  color: blue;
+}
+
+.twich {
+  color: purple;
 }
 
 header {
@@ -103,6 +119,9 @@ header img {
 .foot img {
   width: 7vh;
 }
+.foot i {
+  font-size: 4rem;
+}
 .foot h4 {
   text-align: center;
 }
@@ -127,16 +146,25 @@ header img {
   width: 15%;
 }
 
-.gryffindor {
+.gryffindor, .gryffindor-gold {
   border: none;
   background-color: #6d0000;
   color: white;
   cursor: pointer;
   transition: background-color 200ms ease, color 200ms ease;
 }
-.gryffindor:hover {
+.gryffindor:hover, .gryffindor-gold:hover {
   background-color: #c6a513;
   color: black;
+}
+
+.gryffindor-gold {
+  background-color: #c6a513;
+  color: #012D47;
+}
+.gryffindor-gold:hover {
+  background-color: #6d0000;
+  color: white;
 }
 
 .marco {
@@ -171,6 +199,33 @@ header img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.616);
   padding: 15px;
+}
+
+.fondo {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 19%, rgb(60, 60, 64) 62%);
+  background-size: cover;
+  z-index: -1;
+}
+
+.container-pelicula p {
+  text-align: justify;
+}
+.container-pelicula iframe {
+  min-height: 250px;
+}
+
+.accordion-item {
+  border: 2px solid rgb(128, 128, 128);
+}
+.accordion-button {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+.accordion-button:not(.collapsed) {
+  background-color: black;
+  color: greenyellow;
 }
 
 /*# sourceMappingURL=style.css.map */
