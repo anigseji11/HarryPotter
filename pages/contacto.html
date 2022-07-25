@@ -19,7 +19,7 @@
     <header class="container sticky-top navegacion">
         <div class="row flex-row  align-items-center">
             <div class="col-6">
-                <h1 class="text-center">Harry Potter</h1>
+                <h1 class="text-center"><a href="../index.html">Harry Potter</a></h1>
             </div>
             <div class="col-6">
                 <nav class="navbar navbar-expand-lg">
@@ -44,50 +44,70 @@
             </div>
         </div>
     </header>
+
+
+    
+
+
+  
+  
     <!-- ############################################################### FORMULARIO ################################################### -->
 
-    <div class="container-fluid formulario">
+    <div class="container">
 
-        <div class="container-4">
-            <div class="d-flex justify-content-center p-2">
-                <div class="col col-sm-12 col-md-5">
-                    <form needs-validation>
-                    <div class="mb-3">
-                        <label for="inputNombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre Apellido" required>
+        <div class="row linea">
+
+            <div class="col col-sm-12 d-none d-lg-block imagenLeft"></div>
+
+            <div class="col col-sm-12 formulario">
+                <div class="d-flex justify-content-center p-2">
+                    <div class="col col-sm-12 col-md-12 col-lg-8">
+                        <form needs-validation>
+                        <div class="mb-3">
+                            <label for="inputNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre Apellido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputTipo" class="form-label">Tipo</label>
+                            <select class="form-select" aria-label="Default select example" id="inputTipo" required>
+                                <option selected>Elija una opcion</option>
+                                <option value="1">Sugerencia</option>
+                                <option value="2">Reclamo</option>
+                                <option value="3">Aportes</option>
+                              </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputObservacion" class="form-label">Observaciones</label>
+                            <textarea class="form-control" id="InputObservacion" rows="3"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn gryffindor mb-5" type="submit">Enviar >></button>
+                        </div>
+                    </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputTipo" class="form-label">Tipo</label>
-                        <select class="form-select" aria-label="Default select example" id="inputTipo" required>
-                            <option selected>Elija una opcion</option>
-                            <option value="1">Sugerencia</option>
-                            <option value="2">Reclamo</option>
-                            <option value="3">Aportes</option>
-                          </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputObservacion" class="form-label">Observaciones</label>
-                        <textarea class="form-control" id="InputObservacion" rows="3"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn gryffindor" type="submit">Enviar >></button>
-                    </div>
-                </form>
                 </div>
+    
             </div>
 
+            <div class="col col-sm-12 d-none d-lg-block imagenRigth"></div>
+
         </div>
+
+
+
+
+        
     </div>
 
 
 
     <!-- ######################################################## FOOTER ################################################################ -->
 
-    <footer class="container-fluid mt-5 foot shadow">
+    <footer class="container-fluid mt-5 foot shadow-lg p-3 mb-5 bg-body rounded">
         <div class="row">
             <div class="col-md-4 d-flex flex-column align-items-center">
 
@@ -115,9 +135,9 @@
             <div class="col-md-4 d-flex flex-column align-items-between">
                 <h3 class="fw-bold">Redes Sociales</h3>
                 <div class="d-flex justify-content-around flex-sm-row flex-md-row flex-lg-row mt-3">
-                    <i class="bi bi-facebook facebook" ></i>
-                    <i class="bi bi-youtube youtube"></i>
-                    <i class="bi bi-twitch twich"></i>
+                    <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook facebook"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube youtube"></i></a>
+                    <a href="https://www.twitch.tv" target="_blank"><i class="bi bi-twitch twich"></i></a>
                 </div>
             </div>
             <div class="col-md-4 d-flex flex-column align-items-center mt-3">

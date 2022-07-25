@@ -1,0 +1,41 @@
+.linea {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+        "imgLeft form form form imgRigth"
+        "imgLeft form form form imgRigth";
+
+
+    @include r575 {
+        grid-template-areas:
+            "form form form form form"
+            "form form form form form";
+    }
+}
+
+.formulario {
+    grid-area: form;
+}
+
+.imagenLeft {
+    grid-area: imgLeft;
+    background-image: url(../../img/d6acf211be0514a3d96d74a89666189f.jpg);
+    background-size: cover;
+    background-position: center;
+
+    -webkit-box-shadow: 1px 50px 50px 17px #000000; 
+box-shadow: 1px 50px 50px 17px #000000;
+}
+
+.imagenRigth {
+    grid-area: imgRigth;
+    background-image: url(../../img/d6acf211be0514a3d96d74a89666189f.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    -webkit-box-shadow: 1px 50px 50px 17px #000000; 
+box-shadow: 1px 50px 50px 17px #000000;
+
+}
